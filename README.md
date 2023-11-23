@@ -43,3 +43,12 @@ Imagem 07
 
 
 Imagem 08
+
+
+# Ordem de codificação
+
+1. Models/Entity (Tabelas e relacionamentos do banco de dados).
+2. Repository (Funções que "conversam" com os models).
+3. Services (Possuí as regras de negócios, e é feito uma injeção de dependência do repository).
+4. DTOS (São as classes de dados, que possuem os atributos pertencentes a essa entidade).
+5. Controller (Onde é feito as chamadas HTTP).
